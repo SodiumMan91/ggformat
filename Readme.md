@@ -26,13 +26,13 @@ example,
 will become:
 
     # AFTER
-    mtcars |>
-  group_by(cyl) |>
-  summarize(mean_mpg = mean(mpg)) |>
-  ggplot(aes(factor(cyl), mean_mpg)) +
-  geom_col() +
-  labs(x = "Number of cylinders", y = "Average Miles per Gallon", title = "mtcars") +
-  theme_bw(14)
+    mtcars |> 
+      group_by(cyl) |>
+      summarize(mean_mpg = mean(mpg)) |>
+      ggplot(aes(factor(cyl), mean_mpg)) +
+      geom_col() +
+      labs(x = "Number of cylinders", y = "Average Miles per Gallon", title = "mtcars") +
+      theme_bw(14)
 
 ## What the styled code looks like
 
