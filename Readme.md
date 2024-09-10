@@ -36,7 +36,7 @@ will become:
 
 ## What the styled code looks like
 
--   `%>%`s are followed by line breaks
+-   ` |> `s are followed by line breaks
 
 -   Each **ggplot2** function appears on its own line followed by a `+`.
     Misplaced `+`s, such as after the last function, are removed.
@@ -54,9 +54,9 @@ Source:
 
 The specific sort order is:
 
-    ##  [1] "%>%"      "ggplot"   "geom_"    "stat_"    "coord_"   "facet_"  
-    ##  [7] "scale_"   "xlim"     "ylim"     "ggtitle"  "labs"     "xlab"    
-    ## [13] "ylab"     "annotate" "guides"   "theme_"   "theme"
+    ##  [1] "%>%"      " |> "    "ggplot"   "geom_"    "stat_"    "coord_"  
+    ##  [7] "facet_"    "scale_"   "xlim"     "ylim"     "ggtitle"  "labs"    
+    ## [13] "xlab"    "ylab"     "annotate"   "guides"   "theme_"   "theme"
 
 -   If there are multiple instances of a function type, for example,
     multiple geoms, the current order is preserved.
