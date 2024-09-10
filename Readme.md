@@ -21,7 +21,8 @@ example,
 
     # BEFORE
     mtcars |> group_by(cyl) |> summarize(mean_mpg = mean(mpg)) |> ggplot(aes(factor(cyl),
-    mean_mpg)) + theme_bw(14) + geom_col() + labs(x = "Number of cylinders", y = "Average Miles per Gallon", title = "mtcars")
+    mean_mpg)) + theme_bw(14) + geom_col() + 
+    labs(x = "Number of cylinders", y = "Average Miles per Gallon", title = "mtcars")
 
 will become:
 
